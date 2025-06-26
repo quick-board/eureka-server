@@ -1,3 +1,16 @@
+server:
+  shutdown: graceful
+  port: 8010
+
 spring:
   application:
     name: eureka server
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+
+eureka:
+  dashboard:
+    path: /admin
+  client:
+    register-with-eureka: false
+    fetch-registry: false
