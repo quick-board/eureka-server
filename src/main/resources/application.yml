@@ -1,6 +1,6 @@
 server:
   shutdown: graceful
-  port: 8010
+  port: 8210  # dev, prod; rsc, func, etc; type; num;
 
 spring:
   application:
@@ -15,4 +15,4 @@ eureka:
     register-with-eureka: false #유레카 서버가 여러개일 경우 서버끼리 서로 등록하면 됨
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8011/eureka/ #todo 여러 유레카서버 만들기
+      defaultZone: http://localhost:8211/eureka/ #todo 여러 유레카서버 만들기
